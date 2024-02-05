@@ -47,7 +47,7 @@ sce.RegisterCommands(Assembly.GetExecutingAssembly(), 379378609942560770);
 #endif
 
 client.ThreadCreated += EventHandlers.OnThreadCreated;
-client.Ready += EventHandlers.OnReady;
+client.SessionCreated += EventHandlers.OnReady;
 client.MessageCreated += EventHandlers.OnMessageCreated;
 client.ModalSubmitted += EventHandlers.OnModalSubmitted;
 bce.ButtonCommandErrored += EventHandlers.OnButtonCommandErrored;

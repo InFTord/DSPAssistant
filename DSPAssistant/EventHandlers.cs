@@ -68,7 +68,7 @@ public static class EventHandlers
 		}
 	}
 
-	public static async Task OnReady(DiscordClient sender, ReadyEventArgs eventArgs)
+	public static async Task OnReady(DiscordClient sender, SessionReadyEventArgs eventArgs)
 	{
 		Log.Information("Connected as {Username}#{Discriminator}",
 			sender.CurrentUser.Username,
